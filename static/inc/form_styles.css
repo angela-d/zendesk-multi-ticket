@@ -1,0 +1,208 @@
+html {
+  background: url(./bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: calc(1em + 0.5vh);
+}
+
+@font-face {
+    font-family: 'istok_webregular';
+    src: url('./istokweb-regular-webfont.woff2') format('woff2'),
+         url('./istokweb-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#ticket_form {
+  width: calc(10em + 50vh);
+  padding: 0 1vh;
+  width: 60vw;
+	height: 95%;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.overlay {
+  width:90%;
+  padding:1.5em;
+  left:0;
+  background: rgba(255,255,255,.5);
+}
+
+.notice {
+  width:90%;
+  padding:1.5em;
+  left:0;
+  background: rgba(239,118,34,0.19);
+  margin:auto;
+  margin-bottom:1em;
+  border-radius: 25px;
+}
+
+.title {
+  font-weight: bold;
+  padding: 10em 0 0;
+}
+
+form ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+form li {
+  margin: 0 0 1em 0;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea,
+input[type=submit] {
+  font-size: calc(0.6em + 0.6vh);
+  border: 3px double #CCCCCC;
+  border-top-color: rgb(204, 204, 204);
+  border-top-style: double;
+  border-top-width: 3px;
+  border-right-color: rgb(204, 204, 204);
+  border-right-style: double;
+  border-right-width: 3px;
+  border-bottom-color: rgb(204, 204, 204);
+  border-bottom-style: double;
+  border-bottom-width: 3px;
+  border-left-color: rgb(204, 204, 204);
+  border-left-style: double;
+  border-left-width: 3px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+}
+input[type=text]:focus, textarea:focus {
+  font-size: calc(0.7em + 0.6vh);
+  border: 3px double #CCCCCC;
+  border-top-color: rgb(204, 204, 204);
+  border-top-style: double;
+  border-top-width: 3px;
+  border-right-color: rgb(204, 204, 204);
+  border-right-style: double;
+  border-right-width: 3px;
+  border-bottom-color: rgb(204, 204, 204);
+  border-bottom-style: double;
+  border-bottom-width: 3px;
+  border-left-color: rgb(204, 204, 204);
+  border-left-style: double;
+  border-left-width: 3px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+select:focus,
+textarea:focus,
+submit:focus {
+  border: 3px double #c64a9b;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #001a33;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #001a33;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #001a33;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #001a33;
+}
+
+.field {
+  width: 100%;
+}
+
+.register {
+  padding: 1vw 0;
+}
+
+.feedback {
+  font-size: calc(2em + 1vw)
+  padding: 2vw 0 0;
+  background-color: #ef7622;
+  padding: 1em;
+  border-radius: 25px;
+  width: 80%;
+  margin: 4em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrapper {
+  overflow:hidden;
+  margin: 0 auto;
+  width: 80vh;
+  text-align:center;
+}
+
+.wrapper div {
+   padding: 8px;
+}
+#one {
+  float:left;
+  padding-top:2.4vh;
+  margin-right:2px;
+}
+#one img {
+  max-width: 35%;
+}
+
+#two {
+  font-weight:800;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 2px black, 0 0 0.5em rgba(102, 194, 255, 0.10), 0 0 0.1em rgba(102, 194, 255, .4);
+  color: #000;
+  overflow:hidden;
+  margin-top:25px;
+  min-height:90px;
+}
+
+@media screen and (max-width: 400px) {
+   #one {
+    padding-top:0;
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+  }
+}
+
+a {
+  color: #24478f;
+}
+
+li {
+  padding: 0.5em;
+}
+
+.info {
+  font-size: 0.9em;
+  font-style: italic;
+  color:#498bca;
+}
