@@ -28,9 +28,9 @@ computer_agent = '005'
 ```
 
 - First, install dependencies to the server.  My OS of choice is Debian-based Linux, which uses the apt package manager.
-```bash
-apt install python3-bottle nginx
-```
+  ```bash
+  apt install python3-bottle nginx
+  ```
 
 - Make a directory for your form, for example:
   ```bash
@@ -52,9 +52,9 @@ apt install python3-bottle nginx
 
 
 - Create a service for the application; this is necessary as Python is not a "web language," so it requires a server overlay to execute stuff for web-facing stuff like webpages.  This will launch the script that loads the server. (You can load modules to run Python through Nginx or Apache, optionally)
-```bash
-pico /etc/systemd/system/newemployee.service
-```
+  ```bash
+  pico /etc/systemd/system/newemployee.service
+  ```
 
   - Populate with the following
     ```bash
@@ -79,9 +79,9 @@ pico /etc/systemd/system/newemployee.service
   ```
 
 - Create a startup service (after server reboot, it will be auto-started):
-```bash
-systemctl enable newemployee
-```
+  ```bash
+  systemctl enable newemployee
+  ```
 
 ### How does the Python server work?
 Note the following from the systemd unit file:
@@ -199,7 +199,7 @@ You can have multiple servers/forms using the same assets and space.
 - Create an nginx virtualhost for your new path
 
 ### Known Bugs
-Pre-assigning tickets to agents does not work.  There appears to be some joining of APIs that has to be done to pull the agent IDs successfully (so they're recognized by the right API), since it's more of an annoyance that a blockage, it's a low priority fix.
+Pre-assigning tickets to agents does not work.  There appears to be some joining of APIs that has to be done to pull the agent IDs successfully (so they're recognized by the right API), since it's more of an annoyance than a blockage, it's a low priority fix.
 
 Auto-adding of an agent to the ticket's CC is working.
 
